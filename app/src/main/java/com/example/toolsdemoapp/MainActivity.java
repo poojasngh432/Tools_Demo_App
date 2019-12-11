@@ -10,6 +10,7 @@ import android.os.Bundle;
 import com.example.toolsdemoapp.activity.ActionBarActivity;
 import com.example.toolsdemoapp.activity.DialogBoxes;
 import com.example.toolsdemoapp.activity.ErrorMessages;
+import com.example.toolsdemoapp.activity.LoginActivity;
 import com.example.toolsdemoapp.activity.Views;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
+                startActivity(intent);
+            }
+        });
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
