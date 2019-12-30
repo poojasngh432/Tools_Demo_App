@@ -1,21 +1,16 @@
-package com.example.toolsdemoapp;
+package com.example.toolsdemoapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.os.Bundle;
 
-import com.example.toolsdemoapp.activity.ActionBarActivity;
-import com.example.toolsdemoapp.activity.DialogBoxes;
-import com.example.toolsdemoapp.activity.ErrorMessages;
-import com.example.toolsdemoapp.activity.LoginActivity;
-import com.example.toolsdemoapp.activity.Views;
+import com.example.toolsdemoapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn;
+    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         animationsBtn = (Button) findViewById(R.id.animations_btn);
         dataListsBtn = (Button) findViewById(R.id.data_lists_btn);
         loginBtn = (Button) findViewById(R.id.login_btn);
+        touchListenersBtn = (Button) findViewById(R.id.touch_listeners_btn);
+        freezeLayoutOnTopBtn = (Button) findViewById(R.id.freeze_layout_on_top_btn);
 
         dialogBoxesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +60,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        touchListenersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TouchListenersActivity.class);
+                startActivity(intent);
+            }
+        });
+        freezeLayoutOnTopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FreezeLayoutOnTopActivity.class);
                 startActivity(intent);
             }
         });
