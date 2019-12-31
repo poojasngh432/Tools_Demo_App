@@ -8,7 +8,7 @@
     tools:context=".activity.FreezeLayoutOnTopActivity">
 
     <ScrollView
-        android:id="@+id/scroll1"
+        android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="14">
@@ -102,7 +102,7 @@
                     android:layout_weight="1"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="ALL" />
+                    android:text="ALL"/>
 
                 <!-- Select Product Category Button -->
                 <Button

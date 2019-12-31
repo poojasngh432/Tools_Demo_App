@@ -70,4 +70,25 @@
     <dimen name="dp_9">9dp</dimen>
     <dimen name="dp_35">35dp</dimen>
     <dimen name="dp_70">70dp</dimen>
+
+    <!-- The standard size (both width and height) of an application icon that
+         will be displayed in the app launcher and elsewhere. -->
+    <dimen name="app_icon_size">48dip</dimen>
+
+    <!-- Preferred width and height of the search view. -->
+    <dimen name="search_view_preferred_width">320dip</dimen>
+    <dimen name="search_view_preferred_height">48dip</dimen>
+    <!-- Dialog padding for round display -->
+    <dimen name="alert_dialog_round_padding">27dip</dimen>
+    <!-- Dialog title height -->
+    <dimen name="alert_dialog_title_height">64dip</dimen>
+    <!-- Dialog button bar width -->
+    <dimen name="alert_dialog_button_bar_width">64dp</dimen>
+    <!-- Dialog button bar height -->
+    <dimen name="alert_dialog_button_bar_height">48dip</dimen>
+
+    <!-- Text padding for dropdown items -->
+    <dimen name="dropdownitem_text_padding_right">8dip</dimen>
+
+
 </resources>

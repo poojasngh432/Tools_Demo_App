@@ -84,4 +84,47 @@
     <color name="colorBackground">#413e4f</color>
     <color name="colorText">#FFFFFF</color>
     <color name="colorTextHint">#51d8c7</color>
+
+    <!-- FloatingToolbar -->
+    <color name="floating_popup_divider_dark">#2F2F2F</color>
+    <color name="floating_popup_divider_light">#E9E9E9</color>
+
+    <!-- Status bar color for semi transparent mode. -->
+    <color name="system_bar_background_semi_transparent">#66000000</color> <!-- 40% black -->
+    <color name="resize_shadow_start_color">#2a000000</color>
+    <color name="resize_shadow_end_color">#00000000</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6FFFFFF</color>
+
+    <!-- Default profile badge colors -->
+    <color name="profile_badge_1">#ff1A73E8</color><!-- Blue -->
+    <color name="profile_badge_2">#ffff6d00</color><!-- Orange -->
+    <color name="profile_badge_3">#ff22f033</color><!-- Green -->
+
+    <!-- Default instant app badge color -->
+    <color name="instant_app_badge">#ff757575</color><!-- Grey -->
+
+    <!-- For date picker widget -->
+    <drawable name="selected_day_background">#ff0092f4</drawable>
+
+    <drawable name="screen_background_light">#ffffffff</drawable>
+    <drawable name="screen_background_dark">#ff000000</drawable>
+    <drawable name="status_bar_closed_default_background">#ff000000</drawable>
+    <drawable name="status_bar_opened_default_background">#ff000000</drawable>
+    <drawable name="search_bar_default_color">#ff000000</drawable>
+    <drawable name="safe_mode_background">#60000000</drawable>
+
+    <!-- Background drawable that can be used for a transparent activity to
+         be able to display a dark UI: this darkens its background to make
+         a dark (default theme) UI more visible. -->
+    <drawable name="screen_background_dark_transparent">#80000000</drawable>
+
+    <!-- Background drawable that can be used for a transparent activity to
+         be able to display a light UI: this lightens its background to make
+         a light UI more visible. -->
+    <drawable name="screen_background_light_transparent">#80ffffff</drawable>
+
+
+
+
 </resources>
