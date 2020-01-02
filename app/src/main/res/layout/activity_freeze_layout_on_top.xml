@@ -7,11 +7,12 @@
     android:weightSum="15"
     tools:context=".activity.FreezeLayoutOnTopActivity">
 
-    <ScrollView
+    <com.amar.library.ui.StickyScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="14">
+        android:layout_weight="14"
+        app:stickyHeader="@+id/filterLayout">
 
         <RelativeLayout
             android:id="@+id/eachUnitSaleMainLayout"
@@ -307,7 +308,7 @@
 
         </RelativeLayout>
 
-    </ScrollView>
+    </com.amar.library.ui.StickyScrollView>
 
     <TextView
         android:id="@+id/btn_save"
