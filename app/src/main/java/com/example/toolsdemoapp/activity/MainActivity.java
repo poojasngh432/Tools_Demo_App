@@ -10,7 +10,7 @@ import com.example.toolsdemoapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn;
+    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         loginBtn = (Button) findViewById(R.id.login_btn);
         touchListenersBtn = (Button) findViewById(R.id.touch_listeners_btn);
         freezeLayoutOnTopBtn = (Button) findViewById(R.id.freeze_layout_on_top_btn);
+        scrollingBtn = (Button) findViewById(R.id.scrolling_btn);
 
         dialogBoxesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, FreezeLayoutOnTopActivity.class);
+                startActivity(intent);
+            }
+        });
+        scrollingBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
                 startActivity(intent);
             }
         });

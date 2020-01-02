@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.FreezeLayoutOnTopActivity"></activity>
+        <activity
+            android:name=".activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.FreezeLayoutOnTopActivity" />
         <activity android:name=".activity.TouchListenersActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.UsersListActivity" />
