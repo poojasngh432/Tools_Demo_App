@@ -1,7 +1,7 @@
 # Tools_Demo_App
 
-Android Tools Demo App: 
-An android Demo app to show the functionalities of most used android components and features using respective technologies.
+## Android Tools Demo App: 
+***An android Demo app to show the functionalities of most used android components and features using respective technologies.***
 
 Buttons on Main Screen that lead to another screen with implementation of that feature:
 
