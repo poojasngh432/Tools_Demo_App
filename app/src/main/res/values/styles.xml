@@ -32,4 +32,7 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <declare-styleable name="Toggle"><attr format="string" name="textOn"/><attr format="string" name="textOff"/><attr format="color" name="colorOff"/><attr format="color" name="colorOn"/><attr format="color" name="colorBorder"/><attr format="color" name="colorDisabled"/><attr format="boolean" name="on"/><attr name="android:textSize"/><attr name="android:enabled"/></declare-styleable>
+    <dimen name="default_height">32dp</dimen>
+    <dimen name="default_width">72dp</dimen>
 </resources>

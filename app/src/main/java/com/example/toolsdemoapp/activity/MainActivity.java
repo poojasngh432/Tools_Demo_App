@@ -10,7 +10,7 @@ import com.example.toolsdemoapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn;
+    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn, permissionsBtn, sendEmailBtn, recyclerViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         touchListenersBtn = (Button) findViewById(R.id.touch_listeners_btn);
         freezeLayoutOnTopBtn = (Button) findViewById(R.id.freeze_layout_on_top_btn);
         scrollingBtn = (Button) findViewById(R.id.scrolling_btn);
+        permissionsBtn = findViewById(R.id.permissions_btn);
+        sendEmailBtn = findViewById(R.id.send_email_btn);
+        recyclerViewBtn = findViewById(R.id.recycler_view_btn);
 
         dialogBoxesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,7 +88,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        permissionsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PermissionsActivity.class);
+                startActivity(intent);
+            }
+        });
+        sendEmailBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SendEmailActivity.class);
+                startActivity(intent);
+            }
+        });
+        recyclerViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

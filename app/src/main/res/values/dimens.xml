@@ -92,5 +92,10 @@
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="text_margin">16dp</dimen>
 
+    <dimen name="labeled_default_width">72dp</dimen>
+    <dimen name="labeled_default_height">32dp</dimen>
+
+    <dimen name="item_height">80dp</dimen>
+    <dimen name="item_padding">16dp</dimen>
 
 </resources>

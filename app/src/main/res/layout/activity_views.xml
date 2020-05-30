@@ -235,7 +235,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AutoComplete TextView EditTextBox"
+                android:text="Snackbar"
                 android:textColor="@color/blue_dark"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
@@ -459,13 +459,19 @@
             android:layout_margin="@dimen/dp_10"
             android:padding="@dimen/dp_10"
             android:orientation="vertical">
-            <TextView
+            <com.example.toolsdemoapp.util.LabeledSwitch
+                android:id="@+id/switch4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="add more.."
-                android:textColor="@color/blue_dark"
-                android:textAllCaps="true"
-                android:textStyle="bold"/>
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                app:colorBorder="#00c4a6"
+                app:colorOn="#00c4a6"
+                app:on="false"
+                app:textOff="OFF"
+                app:textOn="ON"/>
+
         </LinearLayout>
 
     </LinearLayout>

@@ -1,7 +1,9 @@
 package com.example.toolsdemoapp.activity;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,9 +22,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
+import com.example.toolsdemoapp.Interface.OnToggledListener;
 import com.example.toolsdemoapp.R;
+import com.example.toolsdemoapp.model.ToggleableView;
+import com.example.toolsdemoapp.util.LabeledSwitch;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Views extends AppCompatActivity implements
         AdapterView.OnItemSelectedListener{
@@ -42,6 +52,13 @@ public class Views extends AppCompatActivity implements
     String[] fruits = {"Apple", "Banana", "Cherry", "Date", "Grape", "Kiwi", "Mango", "Orange", "Pear", "Pineapple", "Plum", "Watermelon"};
     String[] country = { "India", "USA", "China", "Japan", "Korea"};
 
+    private Timer timers[];
+    private volatile boolean stopped = false;
+
+    private LabeledSwitch labeledSwitch;
+
+    private TimerTask[] timerTasks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +77,9 @@ public class Views extends AppCompatActivity implements
         scrollView = (ScrollView) findViewById(R.id.scroll_view_layout);
         seekbar = (SeekBar) findViewById(R.id.seekbar);
         ratingBar = (RatingBar) findViewById(R.id.ratingbar);
+        labeledSwitch = (LabeledSwitch) findViewById(R.id.switch4);
+        labeledSwitch.setLabelOn("ON");
+        labeledSwitch.setLabelOff("OFF");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.select_dialog_item, fruits);
@@ -141,6 +161,20 @@ public class Views extends AppCompatActivity implements
             }
         });
 
+        labeledSwitch.setOnToggledListener(new OnToggledListener() {
+            @Override
+            public void onSwitched(ToggleableView toggleableView, boolean isOn) {
+                if (labeledSwitch.isOn()) {
+                    labeledSwitch.setLabelOn("ON");
+                    Toast.makeText(Views.this,"Switch is On", Toast.LENGTH_SHORT).show();
+
+                } else if (!labeledSwitch.isOn()) {
+                    labeledSwitch.setLabelOff("OFF");
+                    Toast.makeText(Views.this,"Switch is Off", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
         final TextView tv = (TextView) findViewById(R.id.tv);
         np = (NumberPicker) findViewById(R.id.np);
 
@@ -189,6 +223,7 @@ public class Views extends AppCompatActivity implements
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Setting the ArrayAdapter data on the Spinner
         spinner.setAdapter(aa);
+
     }
 
     //Performing action onItemSelected and onNothing selected
@@ -203,4 +238,5 @@ public class Views extends AppCompatActivity implements
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
     }
+
 }

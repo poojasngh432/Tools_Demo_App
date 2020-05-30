@@ -104,6 +104,13 @@
     <!-- Default instant app badge color -->
     <color name="instant_app_badge">#ff757575</color><!-- Grey -->
 
+    <color name="primary">#2d2d2d</color>
+    <color name="secondary">#FF4081</color>
+    <color name="accent">#33b5e5</color>
+    <color name="divider">#CCC</color>
+    <color name="icons">#FFF</color>
+    <color name="item_background">#FFF</color>
+
     <!-- For date picker widget -->
     <drawable name="selected_day_background">#ff0092f4</drawable>
 

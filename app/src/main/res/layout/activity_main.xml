@@ -167,8 +167,8 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/add_something2"
-                    android:text="Add more.."
+                    android:id="@+id/permissions_btn"
+                    android:text="Permissions"
                     android:textColor="@color/white"
                     android:layout_weight="1"
                     android:padding="@dimen/dp_10"
@@ -184,8 +184,8 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/add_something48"
-                    android:text="Add more.."
+                    android:id="@+id/send_email_btn"
+                    android:text="Send Email"
                     android:textColor="@color/white"
                     android:layout_weight="1"
                     android:padding="@dimen/dp_10"
@@ -194,8 +194,8 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/add_something47"
-                    android:text="Add more.."
+                    android:id="@+id/recycler_view_btn"
+                    android:text="Recycler View"
                     android:textColor="@color/white"
                     android:layout_weight="1"
                     android:padding="@dimen/dp_10"
