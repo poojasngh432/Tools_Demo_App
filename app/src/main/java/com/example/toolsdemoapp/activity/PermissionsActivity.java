@@ -6,18 +6,28 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.toolsdemoapp.R;
 
+import java.net.NetworkInterface;
+
 public class PermissionsActivity extends AppCompatActivity {
 
     // Defining Buttons
-    private Button storage, camera;
+    private Button storage, camera, btnDial, btnStatus;
+    private EditText etPhNo;
+    private TextView tvStatus;
 
     // Defining Permission codes.
     // We can give any value
@@ -33,6 +43,10 @@ public class PermissionsActivity extends AppCompatActivity {
 
         storage = findViewById(R.id.storage);
         camera = findViewById(R.id.camera);
+        etPhNo = findViewById(R.id.etPhNo);
+        btnDial = findViewById(R.id.btnDial);
+        btnStatus = findViewById(R.id.btnStatus);
+        tvStatus = findViewById(R.id.tvStatus);
 
         // Set Buttons on Click Listeners
         storage.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +67,43 @@ public class PermissionsActivity extends AppCompatActivity {
                         CAMERA_PERMISSION_CODE);
             }
         });
+
+        //Dangerous Permissions
+        btnDial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //check if we have permission
+                int perm = ContextCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.CALL_PHONE);
+                if(perm == PackageManager.PERMISSION_GRANTED){
+                    callNumber();
+                }else{
+                    ActivityCompat.requestPermissions(
+                            PermissionsActivity.this,
+                            new String[]{
+                                    Manifest.permission.CALL_PHONE
+                            },
+                            121
+                    );
+                }
+            }
+        });
+        btnStatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+                NetworkInfo netInfo = cm.getActiveNetworkInfo();
+                boolean isConnected = netInfo != null && netInfo.isConnected();
+                tvStatus.setText(isConnected ? "CONNECTED":"DISCONNECTED");
+
+            }
+        });
+    }
+
+    private void callNumber() {
+        String telNo = etPhNo.getText().toString();
+        Uri uri = Uri.parse("tel:" + telNo);
+        Intent i = new Intent(Intent.ACTION_CALL, uri);
+        startActivity(i);
     }
 
     // Function to check and request permission.

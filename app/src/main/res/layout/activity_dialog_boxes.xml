@@ -52,6 +52,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/positive_btn"
+                android:layout_weight="1"
+                android:background="@drawable/green_background_round"
+                android:padding="5dp"
+                android:layout_margin="14dp"
+                android:text="Positive"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/negative_btn"
+                android:layout_weight="1"
+                android:background="@drawable/green_background_round"
+                android:padding="5dp"
+                android:layout_margin="14dp"
+                android:text="Negative"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_gravity="center"
             android:padding="@dimen/dp_10"
             android:gravity="center">

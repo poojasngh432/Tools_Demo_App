@@ -2,6 +2,7 @@ package com.example.toolsdemoapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import com.example.toolsdemoapp.R;
@@ -23,23 +24,22 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.util.Calendar;
 
 public class DialogBoxes extends AppCompatActivity {
 
-    private Button alertBuilderBtn;
-    private Button dialogType1Btn;
-    private Button progressDialogBtn;
-    private Button datePickerBtn;
-    private Button timePickerBtn;
-    private EditText selectDateEditText;
-    private EditText selectTimeEditText;
-    private Dialog dialogBox = null;
+    private Button alertBuilderBtn, dialogType1Btn, progressDialogBtn, datePickerBtn, timePickerBtn, positiveBtn, negativeBtn, acceptBtn, retryBtn;
+    private Dialog dialogBox = null, posAndNegDialog;
     private ProgressDialog pd = null;
     private final Context context = null;
     private int mYear, mMonth, mDay, mHour, mMinute;
+    private ImageView closePosBtnIV, closeNegBtnTV;
+    private TextView titleTV, messageTV;
+    private EditText selectDateEditText, selectTimeEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,11 @@ public class DialogBoxes extends AppCompatActivity {
         timePickerBtn = (Button) findViewById(R.id.time_picker_btn);
         selectDateEditText = (EditText) findViewById(R.id.select_date_edit_text);
         selectTimeEditText = (EditText) findViewById(R.id.select_time_edit_text);
+        positiveBtn = findViewById(R.id.positive_btn);
+        negativeBtn = findViewById(R.id.negative_btn);
+        posAndNegDialog = new Dialog(this);
+        positiveBtn = findViewById(R.id.positive_btn);
+        negativeBtn = findViewById(R.id.negative_btn);
 
         alertBuilderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,6 +160,65 @@ public class DialogBoxes extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
+        positiveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              showPositiveDialog();
+            }
+        });
+        negativeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showNegativeDialog();
+            }
+        });
+    }
 
+    private void showNegativeDialog() {
+        posAndNegDialog.setContentView(R.layout.negative_dialog);
+        closeNegBtnTV = posAndNegDialog.findViewById(R.id.close_neg_dialog_IV);
+        retryBtn = posAndNegDialog.findViewById(R.id.btn_retry);
+        titleTV = posAndNegDialog.findViewById(R.id.title_pos_TV);
+        messageTV = posAndNegDialog.findViewById(R.id.message_pos_TV);
+
+        closeNegBtnTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                posAndNegDialog.dismiss();
+            }
+        });
+        retryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                posAndNegDialog.dismiss();
+            }
+        });
+
+        posAndNegDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        posAndNegDialog.show();
+    }
+
+    private void showPositiveDialog() {
+        posAndNegDialog.setContentView(R.layout.positive_dialog);
+        closePosBtnIV = posAndNegDialog.findViewById(R.id.close_pos_dialog_IV);
+        acceptBtn = posAndNegDialog.findViewById(R.id.btn_accept);
+        titleTV = posAndNegDialog.findViewById(R.id.title_pos_TV);
+        messageTV = posAndNegDialog.findViewById(R.id.message_pos_TV);
+
+        closePosBtnIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                posAndNegDialog.dismiss();
+            }
+        });
+        acceptBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                posAndNegDialog.dismiss();
+            }
+        });
+
+        posAndNegDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        posAndNegDialog.show();
     }
 }

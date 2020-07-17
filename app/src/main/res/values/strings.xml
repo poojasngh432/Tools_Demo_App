@@ -117,4 +117,8 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="pos_text_default">You have successfully completed the challenge. Keep it up to earn more!</string>
+    <string name="pos_title_default">Like a boss!</string>
+    <string name="neg_text_default">You have failed to completed the challenge. So close! Wanna have an another go at it?</string>
+    <string name="neg_title_default">Awww... Snap!</string>
 </resources>
