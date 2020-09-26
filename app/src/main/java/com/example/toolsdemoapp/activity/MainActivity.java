@@ -10,7 +10,7 @@ import com.example.toolsdemoapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn, permissionsBtn, sendEmailBtn, recyclerViewBtn;
+    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn, permissionsBtn, sendEmailBtn, recyclerViewBtn, draggableItemsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         permissionsBtn = findViewById(R.id.permissions_btn);
         sendEmailBtn = findViewById(R.id.send_email_btn);
         recyclerViewBtn = findViewById(R.id.recycler_view_btn);
+        draggableItemsBtn = findViewById(R.id.draggable_items_btn);
 
         dialogBoxesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +107,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        draggableItemsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DraggableItemsActivity.class);
                 startActivity(intent);
             }
         });
