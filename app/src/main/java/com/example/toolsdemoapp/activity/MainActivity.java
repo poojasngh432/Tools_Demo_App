@@ -10,7 +10,7 @@ import com.example.toolsdemoapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn, permissionsBtn, sendEmailBtn, recyclerViewBtn, draggableItemsBtn;
+    private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn, permissionsBtn, sendEmailBtn, recyclerViewBtn, draggableItemsBtn, bottomNavBtn, bottomNav2, picassoBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         sendEmailBtn = findViewById(R.id.send_email_btn);
         recyclerViewBtn = findViewById(R.id.recycler_view_btn);
         draggableItemsBtn = findViewById(R.id.draggable_items_btn);
+        bottomNavBtn = findViewById(R.id.bottom_nav_btn);
+        bottomNav2 = findViewById(R.id.bottom_nav_btn2);
+        picassoBtn = findViewById(R.id.picasso_btn);
 
         dialogBoxesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,27 +99,35 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        sendEmailBtn.setOnClickListener(new View.OnClickListener() {
+        sendEmailBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, SendEmailActivity.class);
+            startActivity(intent);
+        });
+        recyclerViewBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+            startActivity(intent);
+        });
+        draggableItemsBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, DraggableItemsActivity.class);
+            startActivity(intent);
+        });
+        bottomNavBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
+            startActivity(intent);
+        });
+        bottomNav2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SendEmailActivity.class);
+                Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
                 startActivity(intent);
             }
         });
-        recyclerViewBtn.setOnClickListener(new View.OnClickListener() {
+        picassoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, PicassoActivity.class);
                 startActivity(intent);
             }
         });
-        draggableItemsBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DraggableItemsActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }

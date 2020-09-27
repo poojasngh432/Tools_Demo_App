@@ -221,8 +221,8 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/add_something45"
-                    android:text="Add more.."
+                    android:id="@+id/bottom_nav_btn"
+                    android:text="Bottom Navigation"
                     android:textColor="@color/white"
                     android:layout_weight="1"
                     android:padding="@dimen/dp_10"
@@ -237,9 +237,9 @@
                 android:orientation="horizontal">
                 <Button
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/add_something44"
-                    android:text="Add more.."
+                    android:layout_height="match_parent"
+                    android:id="@+id/bottom_nav_btn2"
+                    android:text="Bottom Navigation 2"
                     android:textColor="@color/white"
                     android:layout_weight="1"
                     android:padding="@dimen/dp_10"
@@ -247,9 +247,9 @@
                     android:background="@drawable/rounded_cornered_blue_background_new"/>
                 <Button
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/add_something43"
-                    android:text="Add more.."
+                    android:layout_height="match_parent"
+                    android:id="@+id/picasso_btn"
+                    android:text="Picasso"
                     android:textColor="@color/white"
                     android:layout_weight="1"
                     android:padding="@dimen/dp_10"
