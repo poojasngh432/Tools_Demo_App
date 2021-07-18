@@ -41,13 +41,13 @@
         <activity android:name=".activity.Views" />
         <activity android:name=".activity.ErrorMessages" />
         <activity android:name=".activity.DialogBoxes" />
-        <activity android:name=".activity.MainActivity">
+        <!--<activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
     </application>
 
 </manifest>
