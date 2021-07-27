@@ -111,7 +111,7 @@ public class SwipeToActionActivity extends AppCompatActivity {
                 .setAction(actionName, action);
 
         View v = snack.getView();
-        v.setBackgroundColor(getResources().getColor(R.color.secondary));
+        v.setBackgroundColor(getResources().getColor(R.color.gray));
         ((TextView) v.findViewById(com.google.android.material.R.id.snackbar_text)).setTextColor(Color.WHITE);
         ((TextView) v.findViewById(com.google.android.material.R.id.snackbar_action)).setTextColor(Color.BLACK);
 

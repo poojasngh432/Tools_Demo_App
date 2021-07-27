@@ -7,7 +7,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/primary"
         android:gravity="center"
         android:orientation="vertical">
 

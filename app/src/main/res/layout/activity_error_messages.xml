@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/green_background_round"
         android:text="Toast message"
-        android:textColor="@color/white"
+        android:textColor="@color/White"
         android:layout_margin="14dp"/>
 
     <Button

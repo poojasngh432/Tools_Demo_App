@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="AutoComplete TextView EditTextBox"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <AutoCompleteTextView
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <Button
@@ -78,14 +78,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ImageButton"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/image_btn"
-                android:background="@drawable/rounded_cornered_blue_stroke_background"
+                android:background="@drawable/rounded_cornered_black_background"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_horizontal"
                 android:padding="@dimen/dp_10"
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ImageView"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <ImageView
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="EditText"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <EditText
@@ -155,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CheckBox"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <CheckBox
@@ -180,7 +180,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="spinner"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <Spinner
@@ -207,7 +207,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <TextView
@@ -236,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Snackbar"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <LinearLayout
@@ -289,7 +289,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ToggleButton"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <ToggleButton
@@ -312,7 +312,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NumberPicker"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <TextView
@@ -349,7 +349,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RadioButtons"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <RadioGroup
@@ -387,7 +387,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ratingbar"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <RatingBar
@@ -410,7 +410,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="seekbar"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <SeekBar
@@ -439,7 +439,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="switch"
-                android:textColor="@color/blue_dark"
+                android:textColor="@color/blue2"
                 android:textAllCaps="true"
                 android:textStyle="bold"/>
             <Switch
@@ -447,7 +447,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_horizontal"
-                android:background="@color/sky_bulish"
+                android:background="@color/blue_light6"
                 android:padding="@dimen/dp_10"
                 android:layout_margin="18dp" />
         </LinearLayout>

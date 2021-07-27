@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@color/primary"
         app:title="Permissions Example"
         app:titleTextColor="@android:color/white"
         android:layout_height="?android:attr/actionBarSize"/>

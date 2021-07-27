@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:text="This is a dialog box"
         android:textAlignment="center"
-        android:textColor="@color/blue_dark"
+        android:textColor="@color/blue2"
         android:background="@drawable/white_background_round"
         android:textSize="20dp"
         android:layout_gravity="center"

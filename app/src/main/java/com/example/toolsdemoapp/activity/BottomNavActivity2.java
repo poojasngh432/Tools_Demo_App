@@ -14,11 +14,13 @@ import com.example.toolsdemoapp.activity.ui.home.HomeFragment;
 import com.example.toolsdemoapp.activity.ui.notifications.NotificationsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class BottomNavActivity2 extends AppCompatActivity {
+public class BottomNavActivity2 extends AppCompatActivity
+{
     BottomNavigationView bottomNavigation;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_nav2);
 
@@ -27,7 +29,8 @@ public class BottomNavActivity2 extends AppCompatActivity {
         openFragment(HomeFragment.newInstance());
     }
 
-    public void openFragment(Fragment fragment) {
+    public void openFragment(Fragment fragment)
+    {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
         transaction.addToBackStack(null);
@@ -35,9 +38,13 @@ public class BottomNavActivity2 extends AppCompatActivity {
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
+            new BottomNavigationView.OnNavigationItemSelectedListener()
+            {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item)
+                {
+                    switch (item.getItemId())
+                    {
                         case R.id.navigation_home:
                             openFragment(DashboardFragment.newInstance());
                             return true;

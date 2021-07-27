@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextRegular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="TextMedium" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="TextSemiBold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <!-- Regular Style -->
+    <style name="Body.Regular" parent="TextRegular">
+        <item name="android:textSize">@dimen/dp_12</item>
+    </style>
+    <style name="Body.Regular.PrimaryInfo">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+    <style name="Body.Regular.SecondaryInfo">
+        <item name="android:textColor">@color/gray_dark2</item>
+    </style>
+    <style name="Body.Regular.Primary">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="Body.Regular.Primaryaccent">
+        <item name="android:textColor">@color/ruby_red</item>
+    </style>
+    <style name="Body.Regular.Success">
+        <item name="android:textColor">@color/lightgreen</item>
+    </style>
+    <style name="Body.Regular.Error">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- Medium Style -->
+    <style name="Body.Medium" parent="TextMedium">
+        <item name="android:textSize">@dimen/dp_14</item>
+    </style>
+    <style name="Body.Medium.PrimaryInfo">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+    <style name="Body.Medium.SecondaryInfo">
+        <item name="android:textColor">@color/gray_dark2</item>
+    </style>
+    <style name="Body.Medium.Primary">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="Body.Medium.Primaryaccent">
+        <item name="android:textColor">@color/ruby_red</item>
+    </style>
+    <style name="Body.Medium.Success">
+        <item name="android:textColor">@color/lightgreen</item>
+    </style>
+    <style name="Body.Medium.Error">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- SemiBold Style -->
+    <style name="Body.SemiBold" parent="TextSemiBold">
+        <item name="android:textSize">@dimen/dp_14</item>
+    </style>
+    <style name="Body.SemiBold.PrimaryInfo">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+    <style name="Body.SemiBold.SecondaryInfo">
+        <item name="android:textColor">@color/gray_dark2</item>
+    </style>
+    <style name="Body.SemiBold.Primary">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="Body.SemiBold.Primaryaccent">
+        <item name="android:textColor">@color/ruby_red</item>
+    </style>
+    <style name="Body.SemiBold.Success">
+        <item name="android:textColor">@color/lightgreen</item>
+    </style>
+    <style name="Body.SemiBold.Error">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+</resources>
