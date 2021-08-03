@@ -111,7 +111,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:id="@+id/imageview_btn"
-                android:background="@drawable/ic_info_blue"
+                android:background="@drawable/ic_info_green"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="18dp"/>

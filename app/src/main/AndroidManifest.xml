@@ -11,26 +11,28 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/compass"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.FragmentsActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.PicassoActivity" />
         <activity android:name=".activity.BottomNavActivity2" />
         <activity
-            android:name=".activity.BottomNavActivity"
-            android:label="@string/title_activity_bottom_nav" />
+            android:label="@string/title_activity_bottom_nav"
+            android:name=".activity.BottomNavActivity" />
         <activity android:name=".activity.DraggableItemsActivity" />
         <activity android:name=".activity.SwipeToActionActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity
-            android:name=".activity.SendEmailActivity"
-            android:label="Send Email From Android" />
+            android:label="Send Email From Android"
+            android:name=".activity.SendEmailActivity" />
         <activity android:name=".activity.PermissionsActivity" />
         <activity
-            android:name=".activity.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
+            android:name=".activity.ScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.FreezeLayoutOnTopActivity" />
         <activity android:name=".activity.TouchListenersActivity" />
@@ -40,15 +42,14 @@
         <activity android:name=".activity.ActionBarActivity" />
         <activity android:name=".activity.Views" />
         <activity android:name=".activity.ErrorMessages" />
-        <activity android:name=".activity.DialogBoxes" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.DialogBoxesActivity" />
+        <activity android:name=".activity.MainActivityNew">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

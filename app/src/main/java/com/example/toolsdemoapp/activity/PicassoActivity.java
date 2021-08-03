@@ -71,7 +71,7 @@ public class PicassoActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnDrawable:
-                Picasso.with(this).load(R.drawable.android).into(imageView);
+                Picasso.with(this).load(R.drawable.circle_shape_green).into(imageView);
                 break;
             case R.id.btnPlaceholder:
                 Picasso.with(this).load("https://www.cheatsheet.com/wp-content/uploads/2019/08/Kermit.jpg").placeholder(R.drawable.placeholder).into(imageView);
@@ -80,10 +80,10 @@ public class PicassoActivity extends AppCompatActivity implements View.OnClickLi
                 Picasso.with(this).load("https://i.pinimg.com/736x/33/04/ff/3304ffca87839427ca71997e2d2342e9.jpg").placeholder(R.drawable.placeholder).into(imageView);
                 break;
             case R.id.btnError:
-                Picasso.with(this).load("www.journaldev.com").placeholder(R.drawable.placeholder).error(R.drawable.ic_error).into(imageView);
+                Picasso.with(this).load("www.journaldev.com").placeholder(R.drawable.placeholder).error(R.drawable.red_background_round).into(imageView);
                 break;
             case R.id.btnCallBack:
-                Picasso.with(this).load("www.journaldev.com").error(R.drawable.ic_error).into(imageView, new Callback() {
+                Picasso.with(this).load("www.journaldev.com").error(R.drawable.circle_shape_red).into(imageView, new Callback() {
                     @Override
                     public void onSuccess() {
                         Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
@@ -95,30 +95,30 @@ public class PicassoActivity extends AppCompatActivity implements View.OnClickLi
                 });
                 break;
             case R.id.btnResize:
-                Picasso.with(this).load(R.drawable.bg_clouds_purple).resize(200, 200).into(imageView);
+                Picasso.with(this).load(R.drawable.circle_shape_green).resize(200, 200).into(imageView);
                 break;
             case R.id.btnRotate:
-                Picasso.with(this).load(R.drawable.android).rotate(90f).into(imageView);
+                Picasso.with(this).load(R.drawable.circle_shape_green).rotate(90f).into(imageView);
                 break;
             case R.id.btnScale:
                 if (i == 3)
                     i = 0;
                 else {
                     if (i == 0) {
-                        Picasso.with(this).load(R.drawable.bg_clouds_purple).fit().into(imageView);
+                        Picasso.with(this).load(R.drawable.circle_shape_green).fit().into(imageView);
                         Toast.makeText(getApplicationContext(), "Fit", Toast.LENGTH_SHORT).show();
                     } else if (i == 1) {
-                        Picasso.with(this).load(R.drawable.bg_clouds_purple).resize(200, 200).centerCrop().into(imageView);
+                        Picasso.with(this).load(R.drawable.circle_shape_green).resize(200, 200).centerCrop().into(imageView);
                         Toast.makeText(getApplicationContext(), "Center Crop", Toast.LENGTH_SHORT).show();
                     } else if (i == 2) {
-                        Picasso.with(this).load(R.drawable.bg_clouds_purple).resize(200, 200).centerInside().into(imageView);
+                        Picasso.with(this).load(R.drawable.circle_shape_green).resize(200, 200).centerInside().into(imageView);
                         Toast.makeText(getApplicationContext(), "Center Inside", Toast.LENGTH_SHORT).show();
                     }
                     i++;
                 }
                 break;
             case R.id.btnTarget:
-                Picasso.with(this).load("https://d3fa68hw0m2vcc.cloudfront.net/3e6/218354982.jpeg").placeholder(R.drawable.placeholder).error(R.drawable.ic_error).into(target);
+                Picasso.with(this).load("https://d3fa68hw0m2vcc.cloudfront.net/3e6/218354982.jpeg").placeholder(R.drawable.placeholder).error(R.drawable.red_background_round).into(target);
                 break;
         }
     }

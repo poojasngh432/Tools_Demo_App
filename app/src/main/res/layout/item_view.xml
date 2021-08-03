@@ -18,7 +18,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:tint="@color/green_dark2"
-            android:src="@drawable/ic_like_icon"/>
+            android:src="@drawable/ic_helpdesk"/>
     </RelativeLayout>
 
 
@@ -36,7 +36,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:tint="@color/green_dark2"
-            android:src="@drawable/ic_delete_black_24dp"/>
+            android:src="@drawable/circle_shape_red"/>
     </RelativeLayout>
 
 

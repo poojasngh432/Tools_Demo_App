@@ -1,6 +1,7 @@
 package com.example.toolsdemoapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,12 +9,13 @@ import android.widget.Button;
 
 import com.example.toolsdemoapp.R;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
     private Button dialogBoxesBtn, errorMessagesBtn, viewsBtn, actionBarButton, mediaBtn, animationsBtn, dataListsBtn, loginBtn, touchListenersBtn, freezeLayoutOnTopBtn, scrollingBtn, permissionsBtn, sendEmailBtn, recyclerViewBtn, draggableItemsBtn, bottomNavBtn, bottomNav2, picassoBtn;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -36,65 +38,83 @@ public class MainActivity extends AppCompatActivity {
         bottomNav2 = findViewById(R.id.bottom_nav_btn2);
         picassoBtn = findViewById(R.id.picasso_btn);
 
-        dialogBoxesBtn.setOnClickListener(new View.OnClickListener() {
+        dialogBoxesBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DialogBoxes.class);
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this, DialogBoxesActivity.class);
                 startActivity(intent);
             }
         });
-        errorMessagesBtn.setOnClickListener(new View.OnClickListener() {
+        errorMessagesBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, ErrorMessages.class);
                 startActivity(intent);
             }
         });
-        viewsBtn.setOnClickListener(new View.OnClickListener() {
+        viewsBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, Views.class);
                 startActivity(intent);
             }
         });
-        actionBarButton.setOnClickListener(new View.OnClickListener() {
+        actionBarButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
                 startActivity(intent);
             }
         });
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        loginBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
-        touchListenersBtn.setOnClickListener(new View.OnClickListener() {
+        touchListenersBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, TouchListenersActivity.class);
                 startActivity(intent);
             }
         });
-        freezeLayoutOnTopBtn.setOnClickListener(new View.OnClickListener() {
+        freezeLayoutOnTopBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, FreezeLayoutOnTopActivity.class);
                 startActivity(intent);
             }
         });
-        scrollingBtn.setOnClickListener(new View.OnClickListener() {
+        scrollingBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
                 startActivity(intent);
             }
         });
-        permissionsBtn.setOnClickListener(new View.OnClickListener() {
+        permissionsBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, PermissionsActivity.class);
                 startActivity(intent);
             }
@@ -115,16 +135,20 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
             startActivity(intent);
         });
-        bottomNav2.setOnClickListener(new View.OnClickListener() {
+        bottomNav2.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, BottomNavActivity.class);
                 startActivity(intent);
             }
         });
-        picassoBtn.setOnClickListener(new View.OnClickListener() {
+        picassoBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Intent intent = new Intent(MainActivity.this, PicassoActivity.class);
                 startActivity(intent);
             }

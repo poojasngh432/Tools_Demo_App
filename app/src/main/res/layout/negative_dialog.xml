@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/close_neg_dialog_IV"
-        android:src="@drawable/ic_close"
+        android:src="@drawable/ic_crop_white_24dp"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
         android:elevation="5dp"
@@ -74,7 +74,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Try Again!"
                     android:textColor="@color/white"
-                    android:background="@drawable/button_darkred_round"
+                    android:background="@drawable/button_background_yellow_with_shadow"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>

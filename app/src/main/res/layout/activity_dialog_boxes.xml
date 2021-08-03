@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".activity.DialogBoxes">
+    tools:context=".activity.DialogBoxesActivity">
 
     <LinearLayout
 
@@ -27,14 +27,14 @@
             android:textColor="@color/White"/>
 
         <Button
-            android:id="@+id/dialog_type_1_btn"
+            android:id="@+id/dialog_slide_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/green_background_round"
             android:padding="@dimen/dp_10"
             android:layout_margin="14dp"
-            android:text="Dialog Type 1"
+            android:text="Dialog Slide In"
             android:textColor="@color/White"/>
 
         <Button
