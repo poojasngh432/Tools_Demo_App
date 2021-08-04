@@ -16,8 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.FragmentsActivity"></activity>
-        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.AnimationsActivity"></activity>
+        <activity android:name=".activity.AppbarCoordinatorActivity" />
+        <activity android:name=".activity.MenuActivity" />
+        <activity android:name=".activity.SelectFileActivity" />
+        <activity android:name=".activity.GridActivity" />
+        <activity android:name=".activity.VideosActivity" />
+        <activity android:name=".activity.ImagesActivity" />
+        <activity android:name=".activity.NavigationDrawerActivity" />
+        <activity android:name=".activity.BottomsheetActivity" />
+        <activity android:name=".activity.FragmentsActivity" />
         <activity android:name=".activity.PicassoActivity" />
         <activity android:name=".activity.BottomNavActivity2" />
         <activity
@@ -28,20 +36,19 @@
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity
             android:label="Send Email From Android"
-            android:name=".activity.SendEmailActivity" />
+            android:name=".activity.PlayingWithIntentActivity" />
         <activity android:name=".activity.PermissionsActivity" />
         <activity
             android:label="@string/title_activity_scrolling"
             android:name=".activity.ScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.FreezeLayoutOnTopActivity" />
-        <activity android:name=".activity.TouchListenersActivity" />
+        <activity android:name=".activity.TouchEventsActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.UsersListActivity" />
         <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.ActionBarActivity" />
-        <activity android:name=".activity.Views" />
-        <activity android:name=".activity.ErrorMessages" />
+        <activity android:name=".activity.ViewsActivity" />
+        <activity android:name=".activity.ErrorMessagesActivity" />
         <activity android:name=".activity.DialogBoxesActivity" />
         <activity android:name=".activity.MainActivityNew">
             <intent-filter>

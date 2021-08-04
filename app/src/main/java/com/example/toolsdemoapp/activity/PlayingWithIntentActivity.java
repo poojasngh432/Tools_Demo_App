@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.example.toolsdemoapp.R;
 
-public class SendEmailActivity extends AppCompatActivity {
+public class PlayingWithIntentActivity extends AppCompatActivity {
     // define objects for edit text and button
     Button button;
     EditText sendToET, subjectET, bodyET;
@@ -18,7 +18,7 @@ public class SendEmailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_email);
+        setContentView(R.layout.activity_playing_with_intent);
 
         // Getting instance of edittext and button
         sendToET = findViewById(R.id.sendToET);

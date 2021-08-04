@@ -12,6 +12,8 @@ import com.example.toolsdemoapp.R;
 public class RecyclerViewActivity extends AppCompatActivity {
     private Button swipeToActionBtn;
 
+    //Include Nested scrolling here
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

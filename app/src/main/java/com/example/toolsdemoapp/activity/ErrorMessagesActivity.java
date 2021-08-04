@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.toolsdemoapp.R;
 
-public class ErrorMessages extends AppCompatActivity {
+public class ErrorMessagesActivity extends AppCompatActivity {
     Button toastMessageBtn;
     Button errorAlertBtn;
     private AlertDialog errorAlertDialog;
@@ -26,7 +26,7 @@ public class ErrorMessages extends AppCompatActivity {
         toastMessageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ErrorMessages.this, "This is a Toast message!",
+                Toast.makeText(ErrorMessagesActivity.this, "This is a Toast message!",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -35,7 +35,7 @@ public class ErrorMessages extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ErrorMessages.this);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ErrorMessagesActivity.this);
                 alertDialogBuilder.setTitle(R.string.alert);
 
                 alertDialogBuilder

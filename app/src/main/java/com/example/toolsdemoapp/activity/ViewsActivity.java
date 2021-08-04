@@ -1,9 +1,7 @@
 package com.example.toolsdemoapp.activity;
 
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,7 +20,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
 
 import com.example.toolsdemoapp.Interface.OnToggledListener;
 import com.example.toolsdemoapp.R;
@@ -30,12 +27,10 @@ import com.example.toolsdemoapp.model.ToggleableView;
 import com.example.toolsdemoapp.util.LabeledSwitch;
 import com.google.android.material.snackbar.Snackbar;
 
-import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Views extends AppCompatActivity implements
-        AdapterView.OnItemSelectedListener{
+public class ViewsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private AutoCompleteTextView autoCompleteTextView;
     ScrollView scrollView;
@@ -50,7 +45,7 @@ public class Views extends AppCompatActivity implements
     NumberPicker np;
     SeekBar seekbar;
     String[] fruits = {"Apple", "Banana", "Cherry", "Date", "Grape", "Kiwi", "Mango", "Orange", "Pear", "Pineapple", "Plum", "Watermelon"};
-    String[] country = { "India", "USA", "China", "Japan", "Korea"};
+    String[] country = {"India", "USA", "China", "Japan", "Korea"};
 
     private Timer timers[];
     private volatile boolean stopped = false;
@@ -92,14 +87,14 @@ public class Views extends AppCompatActivity implements
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Views.this, "You clicked this Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewsActivity.this, "You clicked this Button", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Views.this, "This is an ImageButton", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewsActivity.this, "This is an ImageButton", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -156,7 +151,7 @@ public class Views extends AppCompatActivity implements
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(Views.this,"Rating is: " + ratingBar.getRating(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewsActivity.this, "Rating is: " + ratingBar.getRating(), Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -166,11 +161,11 @@ public class Views extends AppCompatActivity implements
             public void onSwitched(ToggleableView toggleableView, boolean isOn) {
                 if (labeledSwitch.isOn()) {
                     labeledSwitch.setLabelOn("ON");
-                    Toast.makeText(Views.this,"Switch is On", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ViewsActivity.this, "Switch is On", Toast.LENGTH_SHORT).show();
 
                 } else if (!labeledSwitch.isOn()) {
                     labeledSwitch.setLabelOff("OFF");
-                    Toast.makeText(Views.this,"Switch is Off", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ViewsActivity.this, "Switch is Off", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -193,7 +188,7 @@ public class Views extends AppCompatActivity implements
         //Set a value change listener for NumberPicker
         np.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal){
+            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                 //Display the newly selected number from picker
                 tv.setText("Selected Number : " + newVal);
                 tv.setGravity(View.TEXT_ALIGNMENT_CENTER);
@@ -205,21 +200,21 @@ public class Views extends AppCompatActivity implements
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 progressChangedValue = progress;
-                Toast.makeText(Views.this,"seekbar progress: " + progress, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewsActivity.this, "seekbar progress: " + progress, Toast.LENGTH_SHORT).show();
             }
 
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(Views.this,"seekbar touch started!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewsActivity.this, "seekbar touch started!", Toast.LENGTH_SHORT).show();
             }
 
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(Views.this, "Seek bar progress stopped at:" + progressChangedValue,
+                Toast.makeText(ViewsActivity.this, "Seek bar progress stopped at:" + progressChangedValue,
                         Toast.LENGTH_SHORT).show();
             }
         });
 
         //Creating the ArrayAdapter instance having the fruits list
-        ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,country);
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, country);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Setting the ArrayAdapter data on the Spinner
         spinner.setAdapter(aa);
@@ -231,9 +226,10 @@ public class Views extends AppCompatActivity implements
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
 
         // Showing selected spinner item
-        Toast.makeText(Views.this, "Selected: " + country[position], Toast.LENGTH_LONG).show();
+        Toast.makeText(ViewsActivity.this, "Selected: " + country[position], Toast.LENGTH_LONG).show();
 
     }
+
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub

@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.example.toolsdemoapp.R;
 
-public class TouchListenersActivity extends Activity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener{
+public class TouchEventsActivity extends Activity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener{
 
     private static final String DEBUG_TAG = "Gestures";
     private GestureDetectorCompat mDetector;

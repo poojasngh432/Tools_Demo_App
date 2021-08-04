@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainActivityNew">
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -21,6 +21,7 @@
             android:weightSum="2">
 
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:background="@drawable/bg_blue_rounded"
                 android:id="@+id/dialog_boxes_btn"
                 android:layout_height="wrap_content"
@@ -29,8 +30,7 @@
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
                 android:text="Dialog Boxes"
-                android:textColor="@color/white"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textColor="@color/white" />
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
@@ -63,13 +63,13 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/action_bar_btn"
+                android:id="@+id/grids_btn"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Action Bar"
+                android:text="Grids"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -81,24 +81,24 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/media_btn"
+                android:id="@+id/recycler_view_btn"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Media"
+                android:text="Recycler View"
                 android:textColor="@color/white" />
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/animations_btn"
+                android:id="@+id/bottomsheet_btn"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Animations"
+                android:text="Bottomsheet"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -107,17 +107,6 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:weightSum="2">
-
-            <Button
-                android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/data_lists_btn"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_15"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:padding="@dimen/dp_10"
-                android:text="Data Lists"
-                android:textColor="@color/white" />
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
@@ -129,34 +118,16 @@
                 android:padding="@dimen/dp_10"
                 android:text="Login"
                 android:textColor="@color/white" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="2">
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/touch_listeners_btn"
+                android:id="@+id/navigation_drawer_btn"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Touch Listeners"
-                android:textColor="@color/white" />
-
-            <Button
-                android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/freeze_layout_on_top_btn"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_15"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:padding="@dimen/dp_10"
-                android:text="Freeze layout"
+                android:text="Navigation Drawer"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -168,53 +139,24 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/scrolling_btn"
+                android:id="@+id/bottom_nav_btn"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Scrolling"
+                android:text="Bottom Navigation"
                 android:textColor="@color/white" />
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/permissions_btn"
-                android:layout_height="wrap_content"
+                android:id="@+id/bottom_nav_btn2"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Permissions"
-                android:textColor="@color/white" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <Button
-                android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/send_email_btn"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_15"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:padding="@dimen/dp_10"
-                android:text="Send Email"
-                android:textColor="@color/white" />
-
-            <Button
-                android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/recycler_view_btn"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_15"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:padding="@dimen/dp_10"
-                android:text="Recycler View"
+                android:text="Bottom Navigation 2"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -237,13 +179,13 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/bottom_nav_btn"
+                android:id="@+id/images_btn"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Bottom Navigation"
+                android:text="Images"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -255,24 +197,24 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/bottom_nav_btn2"
-                android:layout_height="match_parent"
+                android:id="@+id/videos_btn"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Bottom Navigation 2"
+                android:text="Videos"
                 android:textColor="@color/white" />
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/picasso_btn"
-                android:layout_height="match_parent"
+                android:id="@+id/select_file_btn"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
-                android:text="Picasso"
+                android:text="Select a File"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -281,6 +223,17 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:weightSum="2">
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/menu_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Menu"
+                android:textColor="@color/white" />
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
@@ -292,11 +245,117 @@
                 android:padding="@dimen/dp_10"
                 android:text="Error Messages"
                 android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/add_something41"
+                android:id="@+id/touch_events_btn"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Touch Events"
+                android:textColor="@color/white" />
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/appbar_coordinator_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Coordinator Appbar Layout"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/freeze_layout_on_top_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Freeze layout"
+                android:textColor="@color/white" />
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/scrolling_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Scrolling"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/permissions_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Permissions"
+                android:textColor="@color/white" />
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/playing_with_intent_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Playing with Intent"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/animations_btn"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="@dimen/dp_10"
+                android:text="Animations"
+                android:textColor="@color/white" />
+
+            <Button
+                android:background="@drawable/bg_blue_rounded"
+                android:id="@+id/add_more_btn2"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -313,8 +372,8 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/add_something31"
-                android:layout_height="wrap_content"
+                android:id="@+id/add_more_btn3"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -324,14 +383,16 @@
 
             <Button
                 android:background="@drawable/bg_blue_rounded"
-                android:id="@+id/add_something3"
-                android:layout_height="wrap_content"
+                android:id="@+id/add_more_btn4"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/dp_15"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:padding="@dimen/dp_10"
                 android:text="Add more.."
                 android:textColor="@color/white" />
+
+
         </LinearLayout>
 
         <LinearLayout
