@@ -18,5 +18,10 @@ class ImagesActivity : AppCompatActivity() {
             val intent = Intent(this@ImagesActivity, PicassoActivity::class.java)
             startActivity(intent)
         }
+
+        binding.glideBtn.setOnClickListener {
+            val intent = Intent(this@ImagesActivity, GlideActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
